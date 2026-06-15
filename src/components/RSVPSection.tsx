@@ -6,9 +6,6 @@ import { Sparkles } from "lucide-react";
 export default function RSVPSection() {
   return (
     <section id="rsvp" className="relative py-28 md:py-36 px-4 overflow-hidden">
-      {/* Intricate decorative background glow orbs */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-[160px] bg-emerald-light/10 pointer-events-none z-0"></div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] rounded-full blur-[120px] bg-gold-400/5 pointer-events-none z-0"></div>
 
       <div className="max-w-3xl mx-auto flex flex-col items-center">
         <motion.div
@@ -35,14 +32,11 @@ export default function RSVPSection() {
             className="w-20 h-20 text-gold-300/30 opacity-70 z-10 relative flex items-center justify-center"
           >
             <svg className="w-full h-full" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.8">
-              <circle cx="50" cy="50" r="45" strokeDasharray="3 3" />
-              <circle cx="50" cy="50" r="38" />
               <rect x="25" y="25" width="50" height="50" transform="rotate(15 50 50)" />
               <rect x="25" y="25" width="50" height="50" transform="rotate(30 50 50)" />
               <rect x="25" y="25" width="50" height="50" transform="rotate(45 50 50)" />
               <rect x="25" y="25" width="50" height="50" transform="rotate(60 50 50)" />
               <rect x="25" y="25" width="50" height="50" transform="rotate(75 50 50)" />
-              <circle cx="50" cy="50" r="10" fill="currentColor" className="opacity-10" />
             </svg>
           </motion.div>
 

@@ -56,6 +56,9 @@ export default function Navbar() {
       if (el) observer.observe(el);
     });
 
+    const heroEl = document.getElementById("hero");
+    if (heroEl) observer.observe(heroEl);
+
     return () => observer.disconnect();
   }, []);
 

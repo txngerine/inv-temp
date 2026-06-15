@@ -30,7 +30,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "The Nikkah Ceremony of Shasna & Shafeeq",
-  description: "Under the grace of Allah (SWT), you are cordially invited to witness the sacred Nikkah ceremony of Shasna Navas and Muhammed Shafeeq on Saturday, July 04, 2026. Please share your blessings and RSVP online.",
+  description: "Under the grace of Allah (SWT), you are cordially invited to witness the sacred Nikkah ceremony of Shasna Navas and Muhammed Shafeeq on Saturday, July 04, 2026. Please share your blessings.",
   keywords: [
     "Nikkah Ceremony",
     "Wedding Invitation",
