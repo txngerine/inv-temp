@@ -13,7 +13,7 @@ export default function RSVPSection() {
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           viewport={{ once: true, margin: "-10%" }}
           transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full p-12 md:p-20 rounded-3xl border border-gold-300/20 relative z-10 glass-panel text-center flex flex-col items-center justify-center gap-8 shadow-2xl overflow-hidden"
+          className="w-full p-6 sm:p-12 md:p-20 rounded-3xl border border-gold-300/20 relative z-10 glass-panel text-center flex flex-col items-center justify-center gap-6 sm:gap-8 shadow-2xl overflow-hidden"
         >
           {/* Inner card gold border frame */}
           <div className="absolute inset-3 rounded-[22px] border border-gold-400/10 pointer-events-none z-0"></div>
@@ -41,9 +41,9 @@ export default function RSVPSection() {
           </motion.div>
 
           {/* Typography Content */}
-          <div className="flex flex-col items-center gap-6 z-10">
+          <div className="flex flex-col items-center gap-6 w-full z-10">
             {/* Header Text */}
-            <h2 className="text-lg sm:text-2xl md:text-3xl font-heading tracking-[0.3em] uppercase text-gold-200 font-light leading-relaxed">
+            <h2 className="text-sm sm:text-2xl md:text-3xl font-heading tracking-[0.2em] sm:tracking-[0.3em] uppercase text-gold-200 font-light leading-relaxed">
               We Would Be Honored
             </h2>
             
@@ -55,7 +55,7 @@ export default function RSVPSection() {
             </div>
             
             {/* Large Gradient Accent Cursive Text */}
-            <p className="text-3xl sm:text-5xl md:text-6xl font-serif italic text-gold font-light tracking-wide py-2 drop-shadow-lg leading-tight">
+            <p className="text-2xl sm:text-5xl md:text-6xl font-serif italic text-gold font-light tracking-wide py-2 drop-shadow-lg leading-tight">
               By Your Presence
             </p>
 
@@ -67,7 +67,7 @@ export default function RSVPSection() {
             </div>
 
             {/* Footer Text */}
-            <h3 className="text-[11px] sm:text-xs md:text-sm font-sans tracking-[0.4em] uppercase text-gold-300 font-medium">
+            <h3 className="text-[11px] sm:text-xs md:text-sm font-sans tracking-[0.3em] sm:tracking-[0.4em] uppercase text-gold-300 font-medium">
               To Share In Our Joy
             </h3>
           </div>
@@ -83,7 +83,7 @@ export default function RSVPSection() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute top-1/4 left-1/6 text-gold-400/25 pointer-events-none hidden md:block"
+            className="absolute top-1/4 left-[16%] text-gold-400/25 pointer-events-none hidden md:block"
           >
             <Sparkles className="w-4 h-4" />
           </motion.div>
@@ -98,7 +98,7 @@ export default function RSVPSection() {
               ease: "easeInOut",
               delay: 1.5,
             }}
-            className="absolute bottom-1/4 right-1/6 text-gold-400/25 pointer-events-none hidden md:block"
+            className="absolute bottom-1/4 right-[16%] text-gold-400/25 pointer-events-none hidden md:block"
           >
             <Sparkles className="w-5 h-5" />
           </motion.div>

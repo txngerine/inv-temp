@@ -19,6 +19,18 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Scroll lock for mobile drawer menu
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
+
   // Scroll effect for navbar background
   useEffect(() => {
     const handleScroll = () => {
@@ -74,12 +86,12 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-30 transition-all duration-500 flex justify-center py-4 px-4 md:px-8 ${
+        className={`fixed top-0 left-0 right-0 z-30 transition-all duration-500 flex justify-center py-2 px-2 sm:py-4 sm:px-4 md:px-8 ${
           isScrolled ? "translate-y-0" : "translate-y-2"
         }`}
       >
         <div
-          className={`w-full max-w-6xl transition-all duration-500 rounded-full flex items-center justify-between px-6 py-2 md:py-3 ${
+          className={`w-full max-w-6xl transition-all duration-500 rounded-full flex items-center justify-between px-4 py-1.5 sm:px-6 sm:py-2 md:py-3 ${
             isScrolled
               ? "glass-panel shadow-2xl border-gold-400/20"
               : "bg-transparent border-transparent"
@@ -89,7 +101,7 @@ export default function Navbar() {
           <a
             href="#hero"
             onClick={(e) => handleLinkClick(e, "#hero")}
-            className="flex items-center gap-1.5 font-heading text-xl md:text-2xl font-semibold tracking-widest text-gold-200"
+            className="flex items-center gap-1.5 font-heading text-lg sm:text-xl md:text-2xl font-semibold tracking-widest text-gold-200"
           >
             <span>S</span>
             <span className="text-xs text-gold-400 font-serif font-light">&</span>

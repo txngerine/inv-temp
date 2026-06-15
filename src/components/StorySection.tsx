@@ -65,7 +65,7 @@ export default function StorySection() {
           {/* Vertical Center Line */}
           <div className="absolute left-4 md:left-1/2 top-4 bottom-4 w-[1px] bg-gradient-to-b from-gold-400/10 via-gold-300/40 to-gold-400/10 transform -translate-x-1/2 hidden md:block"></div>
 
-          <div className="flex flex-col gap-16 md:gap-24">
+          <div className="flex flex-col gap-10 sm:gap-16 md:gap-24">
             {EVENTS.map((event, index) => {
               const isEven = index % 2 === 0;
 
@@ -88,7 +88,7 @@ export default function StorySection() {
                     whileInView={{ opacity: 1, x: 0, y: 0 }}
                     viewport={{ once: true, margin: "-10%" }}
                     transition={{ duration: 1.0, ease: [0.16, 1, 0.3, 1] as const }}
-                    className="w-full md:w-1/2 px-4 md:px-8"
+                    className="w-full md:w-1/2 px-2 sm:px-4 md:px-8"
                   >
                     <div
                       className="rounded-2xl border border-gold-300/15 overflow-hidden flex flex-col glass-panel"

@@ -39,10 +39,16 @@
 body {
   background-color: var(--background);
   background-image: var(--bg-gradient);
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   color: var(--foreground);
   overflow-x: hidden;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-attachment: fixed;
+  }
 }
 
 /* Hide default cursor on desktop when custom cursor is active */

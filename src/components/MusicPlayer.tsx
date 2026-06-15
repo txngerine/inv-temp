@@ -191,7 +191,7 @@ export default function MusicPlayer() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-2 font-sans select-none">
+    <div className="fixed bottom-6 left-4 right-4 sm:left-auto sm:right-6 z-40 flex flex-col items-end gap-2 font-sans select-none">
       {/* Floating interactive volume/unmute reminder when muted */}
       {isMuted && isPlaying && (
         <motion.div
@@ -203,7 +203,7 @@ export default function MusicPlayer() {
         </motion.div>
       )}
 
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 w-full sm:w-auto justify-end">
         {/* Expanded Music Player Control Panel */}
         <AnimatePresence>
           {isExpanded && (
@@ -211,7 +211,7 @@ export default function MusicPlayer() {
               initial={{ opacity: 0, scale: 0.9, x: 20 }}
               animate={{ opacity: 1, scale: 1, x: 0 }}
               exit={{ opacity: 0, scale: 0.9, x: 20 }}
-              className="glass-panel w-80 rounded-2xl p-4 flex flex-col gap-3 text-gold-100"
+              className="glass-panel w-full sm:w-80 rounded-2xl p-4 flex flex-col gap-3 text-gold-100"
             >
               {/* Header */}
               <div className="flex justify-between items-center border-b border-gold-300/10 pb-2">

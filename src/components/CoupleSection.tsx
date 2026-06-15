@@ -59,7 +59,7 @@ export default function CoupleSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-10%" }}
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: idx * 0.2 }}
-              className="flex flex-col items-center text-center p-8 md:p-10 rounded-3xl border border-gold-300/15 glass-panel h-full relative"
+              className="flex flex-col items-center text-center p-5 sm:p-8 md:p-10 rounded-3xl border border-gold-300/15 glass-panel h-full relative"
             >
               {/* Decorative Corner Accents */}
               <div className="absolute top-4 left-4 w-5 h-5 border-t border-l border-gold-300/30"></div>
@@ -68,7 +68,7 @@ export default function CoupleSection() {
               <div className="absolute bottom-4 right-4 w-5 h-5 border-b border-r border-gold-300/30"></div>
 
               {/* Photo Frame Container */}
-              <div className="relative w-64 h-80 mb-8 rounded-2xl overflow-hidden border border-gold-300/20 p-2 bg-emerald-dark/60 group shadow-2xl">
+              <div className="relative w-56 h-72 sm:w-64 sm:h-80 mb-8 rounded-2xl overflow-hidden border border-gold-300/20 p-2 bg-emerald-dark/60 group shadow-2xl shrink-0">
                 <div className="relative w-full h-full rounded-xl overflow-hidden bg-emerald-deep">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
@@ -88,7 +88,7 @@ export default function CoupleSection() {
 
               {/* Text Info */}
               <div className="flex-1 flex flex-col items-center">
-                <h3 className="text-2xl md:text-3xl font-heading font-light tracking-wide text-gold-100 mb-2">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-heading font-light tracking-wide text-gold-100 mb-2">
                   {member.name}
                 </h3>
                 

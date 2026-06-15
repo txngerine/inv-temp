@@ -67,7 +67,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 1.2 }}
-              className="text-3xl md:text-4xl font-heading text-gold-200 tracking-wide font-light mb-8"
+              className="text-2xl sm:text-3xl md:text-4xl font-heading text-gold-200 tracking-wide font-light mb-8 px-4"
             >
               Shasna Navas & Muhammed Shafeeq
             </motion.h1>

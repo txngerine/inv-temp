@@ -88,21 +88,21 @@ export default function HeroSection() {
       >
         {/* Invitation Calligraphy Insignia */}
         <motion.div variants={itemVariants} className="flex flex-col items-center">
-          <span className="text-[11px] md:text-xs tracking-[0.4em] uppercase text-gold-300/80 mb-2 font-sans font-medium">
+          <span className="text-[10px] sm:text-xs tracking-[0.25em] sm:tracking-[0.4em] uppercase text-gold-300/80 mb-2 font-sans font-medium">
             بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
           </span>
           <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-gold-300 to-transparent"></div>
         </motion.div>
 
         {/* Big Couple Title Names */}
-        <motion.div variants={itemVariants} className="relative py-2">
+        <motion.div variants={itemVariants} className="relative py-2 w-full">
           {/* Subtle gold text glows */}
-          <h1 className="text-5xl sm:text-7xl md:text-8xl font-heading font-light tracking-wide flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-gold-100">
+          <h1 className="text-4xl xs:text-5xl sm:text-7xl md:text-8xl font-heading font-light tracking-wide flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-6 text-gold-100">
             <span>Shasna</span>
-            <span className="text-3xl sm:text-5xl font-arabic text-gold-400 my-1 sm:my-0">&</span>
+            <span className="text-2xl sm:text-5xl font-arabic text-gold-400 my-0.5 sm:my-0">&</span>
             <span>Shafeeq</span>
           </h1>
-          <p className="text-xs sm:text-sm tracking-[0.4em] uppercase mt-4 font-sans font-light text-gold-300">
+          <p className="text-[10px] sm:text-sm tracking-[0.3em] sm:tracking-[0.4em] uppercase mt-4 font-sans font-light text-gold-300">
             We Are Tying The Knot
           </p>
         </motion.div>
@@ -110,31 +110,31 @@ export default function HeroSection() {
         {/* Short details */}
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 text-xs sm:text-sm tracking-widest text-gold-100/80 font-sans font-light py-3 border-y border-gold-300/10 text-gold-200/80"
+          className="flex flex-col sm:flex-row items-center gap-3 sm:gap-8 text-xs sm:text-sm tracking-widest text-gold-100/80 font-sans font-light py-3 border-y border-gold-300/10 text-gold-200/80 w-full max-w-lg justify-center px-4"
         >
-          <div className="flex items-center gap-2">
-            <Calendar className="w-4 h-4 text-gold-400" />
-            <span className="flex items-center gap-1.5 flex-wrap">
+          <div className="flex items-center gap-2 text-center justify-center">
+            <Calendar className="w-4 h-4 text-gold-400 shrink-0" />
+            <span className="flex items-center gap-1.5 flex-wrap justify-center">
               <span>Saturday, July 04, 2026</span>
               <span className="text-gold-400/60">•</span>
               <span className="font-arabic text-[15px] text-gold-300 translate-y-[1px]">١٩ محرم</span>
             </span>
           </div>
           <div className="hidden sm:block w-1.5 h-1.5 rounded-full bg-gold-400"></div>
-          <div className="flex items-center gap-2">
-            <Clock className="w-4 h-4 text-gold-400" />
+          <div className="flex items-center gap-2 justify-center">
+            <Clock className="w-4 h-4 text-gold-400 shrink-0" />
             <span>1:00 PM onwards</span>
           </div>
           <div className="hidden sm:block w-1.5 h-1.5 rounded-full bg-gold-400"></div>
-          <div className="flex items-center gap-2">
-            <MapPin className="w-4 h-4 text-gold-400" />
+          <div className="flex items-center gap-2 justify-center text-center">
+            <MapPin className="w-4 h-4 text-gold-400 shrink-0" />
             <span>Green Oak Auditorium</span>
           </div>
         </motion.div>
 
         {/* Countdown Timer */}
-        <motion.div variants={itemVariants} className="w-full max-w-lg mt-4">
-          <div className="grid grid-cols-4 gap-3 md:gap-4">
+        <motion.div variants={itemVariants} className="w-full max-w-lg mt-4 px-2">
+          <div className="grid grid-cols-4 gap-2 sm:gap-4">
             {[
               { label: "Days", value: timeLeft.days },
               { label: "Hours", value: timeLeft.hours },
@@ -143,12 +143,12 @@ export default function HeroSection() {
             ].map((timeUnit, i) => (
               <div
                 key={i}
-                className="flex flex-col items-center justify-center p-3 rounded-xl border border-gold-300/10 glass-panel"
+                className="flex flex-col items-center justify-center py-2 px-1 sm:p-3 rounded-xl border border-gold-300/10 glass-panel"
               >
-                <span className="text-xl sm:text-3xl font-heading font-medium text-gold-200">
+                <span className="text-lg sm:text-3xl font-heading font-medium text-gold-200">
                   {String(timeUnit.value).padStart(2, "0")}
                 </span>
-                <span className="text-[9px] sm:text-[10px] tracking-widest uppercase font-sans mt-1 text-gold-400">
+                <span className="text-[8px] sm:text-[10px] tracking-wider sm:tracking-widest uppercase font-sans mt-1 text-gold-400">
                   {timeUnit.label}
                 </span>
               </div>
@@ -162,7 +162,7 @@ export default function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.7 }}
         transition={{ delay: 2, duration: 1 }}
-        className="absolute bottom-10 z-10 flex flex-col items-center gap-2 cursor-pointer"
+        className="absolute bottom-10 z-10 hidden sm:flex flex-col items-center gap-2 cursor-pointer"
         onClick={() => {
           document.getElementById("welcome")?.scrollIntoView({ behavior: "smooth" });
         }}

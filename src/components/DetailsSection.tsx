@@ -104,15 +104,15 @@ export default function DetailsSection() {
               viewport={{ once: true }}
               transition={{ delay: idx * 0.2, duration: 1 }}
               key={idx}
-              className="rounded-2xl border border-gold-300/15 p-6 md:p-10 flex flex-col gap-6 relative overflow-hidden glass-panel"
+              className="rounded-2xl border border-gold-300/15 p-5 sm:p-8 md:p-10 flex flex-col gap-6 relative overflow-hidden glass-panel"
             >
               {/* Event Decorative Arabic Calligraphy Backdrop */}
-              <span className="absolute right-4 top-2 text-7xl md:text-8xl font-arabic text-gold-300/5 select-none pointer-events-none">
+              <span className="absolute right-4 top-2 text-6xl md:text-8xl font-arabic text-gold-300/5 select-none pointer-events-none">
                 {event.arabicTitle}
               </span>
 
               <div className="flex flex-col gap-1">
-                <h3 className="text-2xl font-heading font-light text-gold-200">
+                <h3 className="text-xl sm:text-2xl font-heading font-light text-gold-200">
                   {event.title}
                 </h3>
                 <span className="text-[9px] tracking-[0.3em] uppercase text-gold-400 font-sans font-semibold">
@@ -161,19 +161,19 @@ export default function DetailsSection() {
               </div>
 
               {/* Action Buttons */}
-              <div className="flex flex-wrap items-center gap-3 mt-4 border-t border-gold-300/10 pt-6">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mt-4 border-t border-gold-300/10 pt-6">
                 <a
                   href={event.mapLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 min-w-[130px] flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-xs font-sans tracking-widest uppercase bg-gold-400 text-emerald-deep hover:bg-gold-300 hover:scale-[1.02] transition-all font-semibold shadow-md cursor-pointer"
+                  className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-xs font-sans tracking-widest uppercase bg-gold-400 text-emerald-deep hover:bg-gold-300 hover:scale-[1.02] transition-all font-semibold shadow-md cursor-pointer"
                 >
                   <Navigation className="w-3.5 h-3.5" />
                   <span>Directions</span>
                 </a>
 
                 {/* Calendar Add Menu */}
-                <div className="flex gap-2">
+                <div className="flex gap-2 justify-center">
                   <button
                     onClick={() => window.open(getGoogleCalendarLink(event), "_blank")}
                     className="p-2.5 rounded-full border border-gold-300/20 hover:border-gold-300/50 hover:bg-gold-400/10 text-gold-300 transition-all cursor-pointer"
@@ -183,7 +183,7 @@ export default function DetailsSection() {
                   </button>
                   <button
                     onClick={() => downloadIcsFile(event)}
-                    className="px-3 py-2.5 rounded-full border border-gold-300/20 hover:border-gold-300/50 hover:bg-gold-400/10 text-gold-300 text-xs font-sans tracking-widest uppercase transition-all cursor-pointer"
+                    className="flex-1 sm:flex-initial px-4 py-2.5 rounded-full border border-gold-300/20 hover:border-gold-300/50 hover:bg-gold-400/10 text-gold-300 text-xs font-sans tracking-widest uppercase text-center transition-all cursor-pointer"
                     title="Download Calendar .ics file"
                   >
                     <span>Apple / Outlook</span>

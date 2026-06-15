@@ -28,8 +28,8 @@ export default function DuaSection() {
         </div>
 
         {/* The Arabic Dua Calligraphy */}
-        <div className="relative py-4 flex flex-col items-center">
-          <h2 className="text-3xl md:text-5xl font-arabic text-gold-100 tracking-wide leading-loose text-gold shadow-gold font-light">
+        <div className="relative py-4 flex flex-col items-center w-full">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-arabic text-gold-100 tracking-wide leading-loose text-gold shadow-gold font-light px-4">
             بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
           </h2>
           <div className="w-24 h-[1px] bg-gradient-to-r from-transparent via-gold-400 to-transparent mt-6"></div>
@@ -37,7 +37,7 @@ export default function DuaSection() {
 
         {/* Translation details */}
         <div className="flex flex-col items-center gap-4 max-w-2xl font-serif">
-          <p className="text-lg md:text-xl font-light italic leading-relaxed text-gold-200">
+          <p className="text-base sm:text-lg md:text-xl font-light italic leading-relaxed text-gold-200 px-4">
             &ldquo;May Allah bless you, and shower His blessings upon you, and join you together in goodness.&rdquo;
           </p>
           <span className="text-[10px] tracking-[0.3em] uppercase text-gold-400 font-sans font-semibold">

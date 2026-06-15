@@ -16,7 +16,7 @@ export default function WelcomeSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-10%" }}
         transition={{ duration: 1.2, ease: "easeOut" }}
-        className="w-full max-w-3xl text-center z-10 flex flex-col items-center gap-6 md:gap-8 p-8 md:p-12 rounded-3xl border border-gold-300/10 glass-panel"
+        className="w-full max-w-3xl text-center z-10 flex flex-col items-center gap-6 md:gap-8 px-4 py-8 sm:p-8 md:p-12 rounded-3xl border border-gold-300/10 glass-panel"
       >
         {/* Animated Top Scroll Graphic */}
         <div className="w-24 h-8 text-gold-400 opacity-60">
@@ -28,11 +28,11 @@ export default function WelcomeSection() {
         </div>
 
         {/* Islamic Greeting in Arabic */}
-        <div className="flex flex-col items-center gap-2">
-          <span className="text-2xl md:text-3xl font-arabic text-gold-200 tracking-wide">
+        <div className="flex flex-col items-center gap-2 w-full px-2">
+          <span className="text-xl sm:text-2xl md:text-3xl font-arabic text-gold-200 tracking-wide leading-relaxed break-words whitespace-normal text-center">
             السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ
           </span>
-          <span className="text-[10px] md:text-xs tracking-[0.25em] font-sans uppercase font-medium mt-1 text-gold-300/80">
+          <span className="text-[9px] sm:text-[10px] md:text-xs tracking-[0.15em] sm:tracking-[0.25em] font-sans uppercase font-medium mt-1 text-gold-300/80 leading-relaxed text-center max-w-md">
             Peace, Mercy, and Blessings of Allah be upon you
           </span>
         </div>
