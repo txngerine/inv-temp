@@ -14,7 +14,7 @@ const PLAYLIST: Track[] = [
   {
     title: "American Wedding",
     category: "Frank Ocean Instrumental",
-    url: "/music/american_wedding.mpeg",
+    url: "/music/Frank Ocean - American Wedding Karaoke Instrumental Lower Higher Female & Original Key.mp3",
   },
   {
     title: "Serene Oud & Strings",

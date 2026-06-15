@@ -47,7 +47,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
               transition={{ duration: 1.5, ease: "easeOut" }}
               className="z-10 flex flex-col items-center"
             >
-              <span className="text-4xl text-gold-200 font-arabic tracking-widest text-center shadow-gold">
+              <span className="text-3xl md:text-4xl text-gold-200 font-arabic tracking-tight md:tracking-widest text-center shadow-gold px-6">
                 ﷽
               </span>
             </motion.div>

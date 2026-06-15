@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Heart } from "lucide-react";
-
 interface CoupleMember {
   name: string;
   role: "Groom" | "Bride";
@@ -111,16 +109,6 @@ export default function CoupleSection() {
           ))}
         </div>
 
-        {/* Elegant Centered Heart Divider */}
-        <motion.div
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, type: "spring" }}
-          className="mt-12 text-gold-400 bg-emerald-dark border border-gold-300/20 p-3 rounded-full z-10 shadow-lg shadow-gold-400/5"
-        >
-          <Heart className="w-5 h-5 fill-gold-400/20 animate-pulse-slow" />
-        </motion.div>
       </div>
     </section>
   );

@@ -9,7 +9,7 @@ import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import WelcomeSection from "./WelcomeSection";
 import CoupleSection from "./CoupleSection";
-import StorySection from "./StorySection";
+/* import StorySection from "./StorySection"; */
 import DetailsSection from "./DetailsSection";
 import ScheduleSection from "./ScheduleSection";
 import FamilySection from "./FamilySection";
@@ -43,7 +43,7 @@ export default function ClientWrapper() {
             <HeroSection />
             <WelcomeSection />
             <CoupleSection />
-            <StorySection />
+            {/* <StorySection /> */}
             <DetailsSection />
             <ScheduleSection />
             <FamilySection />
