@@ -22,7 +22,7 @@ const FAMILY_INFO: FamilySide[] = [
   {
     side: "Groom",
     arabicHeading: "عائلة العريس",
-    parents: "Late Noushad & Haseena Noushad",
+    parents: "Noushad (late) & Haseena Noushad",
     parentsTitle: "Parents of the Groom",
     address: "Vadakkayil House, Payyoli Angadi, Thurayur",
   },

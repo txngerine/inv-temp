@@ -6,7 +6,7 @@ interface CoupleMember {
   role: "Groom" | "Bride";
   parents: string;
   parentsTitle: string;
-  description: string;
+  description?: string;
   image: string;
 }
 
@@ -16,15 +16,13 @@ const MEMBERS: CoupleMember[] = [
     role: "Bride",
     parents: "Mr. Shanavas & Mrs. Shaniba Navas",
     parentsTitle: "Daughter of",
-    description: "A woman of grace and kindness, whose warmth and smile brighten the lives of everyone around her. Embarking on this sacred covenant with love, faith, and beautiful dreams for the future.",
     image: "/bride.jpg",
   },
   {
     name: "Muhammed Shafeeq",
     role: "Groom",
-    parents: "Late Noushad & Haseena Noushad",
+    parents: "Noushad (late) & Haseena Noushad",
     parentsTitle: "Son of",
-    description: "A man of character, sincerity, and strength, dedicated to building a life grounded in faith, patience, and love. Stepping into this new chapter with gratitude and devotion.",
     image: "/groom.jpg",
   },
 ];
@@ -99,11 +97,14 @@ export default function CoupleSection() {
                   </p>
                 </div>
 
-                <div className="w-12 h-[1px] bg-gold-400/20 mb-6"></div>
-
-                <p className="text-xs md:text-sm font-sans font-light leading-relaxed text-gold-100/70 max-w-sm italic">
-                  &ldquo;{member.description}&rdquo;
-                </p>
+                {member.description && (
+                  <>
+                    <div className="w-12 h-[1px] bg-gold-400/20 mb-6"></div>
+                    <p className="text-xs md:text-sm font-sans font-light leading-relaxed text-gold-100/70 max-w-sm italic">
+                      &ldquo;{member.description}&rdquo;
+                    </p>
+                  </>
+                )}
               </div>
             </motion.div>
           ))}

@@ -86,7 +86,7 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-30 transition-all duration-500 flex justify-center py-2 px-2 sm:py-4 sm:px-4 md:px-8 ${
+        className={`fixed top-0 left-0 right-0 z-30 transition-all duration-500 hidden md:flex justify-center py-2 px-2 sm:py-4 sm:px-4 md:px-8 ${
           isScrolled ? "translate-y-0" : "translate-y-2"
         }`}
       >
